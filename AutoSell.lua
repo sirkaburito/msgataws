@@ -1,8 +1,6 @@
 getgenv().IsOn = true
 
-spawn(function()
-    while wait(0.5)do
-        if getgenv().IsOn == true then
+function AutoSell()
         local args = {
             [1] = "Sell",
             [2] = {
@@ -23,7 +21,34 @@ spawn(function()
                 }
             }
         }
-        game:GetService("ReplicatedStorage").Events.inventory:FireServer(unpack(args))
+        game:GetService("ReplicatedStorage").Events.inventory:FireServer(unpack(args)) 
+end
+
+function AutoOpen()
+    local args = {
+        [1] = "Open",
+        [2] = "666"
+    }
+    game:GetService("ReplicatedStorage").Events.inventory:FireServer(unpack(args))
+
+    local args = {
+        [1] = "Equip",
+        [2] = "02"
+    }
+    game:GetService("ReplicatedStorage").Events.inventory:FireServer(unpack(args))
+
+    local args = {
+        [1] = "Equip",
+        [2] = "03"
+    }
+    game:GetService("ReplicatedStorage").Events.inventory:FireServer(unpack(args))
+end
+
+spawn(function()
+    while wait(0.5)do
+        if getgenv().IsOn == true then
+            AutoSell()
+            AutoOpen()
         end
     end
 end)

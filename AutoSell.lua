@@ -1,4 +1,12 @@
-getgenv().IsOn = true
+getgenv().IsOn = false
+getgenv().IsOn2 = true
+
+function AutoQuest()
+        local args = {
+            [1] = "11"
+        }
+        game:GetService("ReplicatedStorage").Events.zoneQuest:FireServer(unpack(args))
+end
 
 function AutoSell()
         local args = {
@@ -49,6 +57,9 @@ spawn(function()
         if getgenv().IsOn == true then
             AutoSell()
             AutoOpen()
+        end
+        if getgenv().IsOn2 == true then
+            AutoQuest()
         end
     end
 end)

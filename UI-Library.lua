@@ -152,7 +152,7 @@ local SolarisLib = {
     Settings = {
         Theme = "Green",
         ShowFriendsOnLaunch = true,
-        ShowMusicOnLaunch = false,
+        ShowMusicOnLaunch = true,
         CloseBind = "RightControl"
     },
     Flags = {},

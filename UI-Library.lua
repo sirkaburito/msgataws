@@ -150,7 +150,7 @@ local SolarisLib = {
         }
     },
     Settings = {
-        Theme = "Green",
+        Theme = "Discord",
         ShowFriendsOnLaunch = true,
         ShowMusicOnLaunch = true,
         CloseBind = "RightControl"

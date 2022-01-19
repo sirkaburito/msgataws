@@ -152,12 +152,16 @@ local SolarisLib = {
     Settings = {
         Theme = "Discord",
         ShowFriendsOnLaunch = true,
+        ShowMusicOnLaunch = false,
         CloseBind = "RightControl"
     },
     Flags = {},
     CurrentTab
 }
 
+
+
+local MainUI = game:GetObjects("rbxassetid://7835727566")[1]
 local function MakeDraggable(topbarobject, object) 
     pcall(function()
 		local dragging, dragInput, mousePos, framePos = false

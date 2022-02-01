@@ -1,1 +1,0 @@
-print("KRNL is sooooo trash")

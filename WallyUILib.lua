@@ -1040,7 +1040,7 @@ do
 				Size = UDim2.new(0, 40, 0, 14),
 				ZIndex = 2,
 				Image = "rbxassetid://5028857472",
-				ImageColor3 = Color3.fromRGB(255, 255, 255),
+				ImageColor3 = Color3.fromHex("#FF0000"),
 				ScaleType = Enum.ScaleType.Slice,
 				SliceCenter = Rect.new(2, 2, 298, 298)
 			})
